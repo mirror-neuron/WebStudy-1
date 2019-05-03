@@ -1,3 +1,28 @@
 
 4월 29, 2019 12:42:18.42 NEW SESSION
 4월 29, 2019 12:42:18.42 [4772:13200:0429/124218.422:ERROR:browser_process_sub_thread.cc(217)] Waited 164 ms for network service
+4월 29, 2019 14:38:18.81 [11020:3728:0429/143818.814:ERROR:browser_process_sub_thread.cc(217)] Waited 116 ms for network service
+
+4월 30, 2019 09:43:29.93 NEW SESSION
+4월 30, 2019 09:43:29.93 [5716:4548:0430/094329.933:ERROR:CONSOLE(0)] "Access to XMLHttpRequest at 'https://play.google.com/log?format=json&hasfast=true&authuser=0' from origin 'chrome-search://local-ntp' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'http://play.google.com' that is not equal to the supplied origin.", source: chrome-search://local-ntp/local-ntp.html (0)
+4월 30, 2019 09:43:36.91 [5716:4548:0430/094336.912:ERROR:CONSOLE(0)] "Access to XMLHttpRequest at 'https://play.google.com/log?format=json&hasfast=true&authuser=0' from origin 'chrome-search://local-ntp' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'http://play.google.com' that is not equal to the supplied origin.", source: chrome-search://local-ntp/local-ntp.html (0)
+4월 30, 2019 09:44:35.85 [5716:4548:0430/094435.857:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+4월 30, 2019 11:17:13.24 [5716:4548:0430/111713.248:ERROR:CONSOLE(0)] "Access to XMLHttpRequest at 'https://play.google.com/log?format=json&hasfast=true&authuser=0' from origin 'chrome-search://local-ntp' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'http://play.google.com' that is not equal to the supplied origin.", source: chrome-search://local-ntp/local-ntp.html (0)
+4월 30, 2019 11:17:18.11 [5716:4548:0430/111718.112:ERROR:CONSOLE(0)] "Access to XMLHttpRequest at 'https://play.google.com/log?format=json&hasfast=true&authuser=0' from origin 'chrome-search://local-ntp' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'http://play.google.com' that is not equal to the supplied origin.", source: chrome-search://local-ntp/local-ntp.html (0)
+4월 30, 2019 13:46:56.79 [5716:12320:0430/134656.796:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+
+5월 02, 2019 14:30:59.64 NEW SESSION
+5월 02, 2019 14:30:59.64 [9804:13708:0502/143059.646:ERROR:browser_process_sub_thread.cc(217)] Waited 59 ms for network service
+5월 02, 2019 15:41:37.23 [14908:3668:0502/154137.233:ERROR:browser_process_sub_thread.cc(217)] Waited 37 ms for network service
+
+5월 03, 2019 14:22:52.97 NEW SESSION
+5월 03, 2019 14:22:52.97 [6940:3448:0503/142252.962:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 03, 2019 14:24:18.86 [6940:3448:0503/142418.863:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 03, 2019 14:24:18.93 [6940:3448:0503/142418.937:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 03, 2019 14:24:19.31 [6940:3448:0503/142419.314:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 03, 2019 14:26:03.39 [6940:3448:0503/142603.399:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 03, 2019 14:26:14.17 [6940:3448:0503/142614.179:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 03, 2019 14:38:28.25 [6940:13972:0503/143828.256:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+5월 03, 2019 15:01:44.37 [6940:3448:0503/150144.374:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 03, 2019 16:17:36.32 [6940:13972:0503/161736.325:ERROR:page_load_metrics_update_dispatcher.cc(108)] Invalid parse_blocked_on_script_execution_duration 0.761 s for parse duration 0.644 s
+5월 03, 2019 16:17:37.09 [6940:13972:0503/161737.097:ERROR:page_load_metrics_update_dispatcher.cc(108)] Invalid parse_blocked_on_script_execution_duration 0.761 s for parse duration 0.644 s

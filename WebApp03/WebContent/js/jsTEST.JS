@@ -1,0 +1,1 @@
+document.write("2019년 5월 둘째 날");

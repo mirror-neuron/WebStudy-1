@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test005</title>
+<style type="text/css">
+p>i {
+	color: blue;
+	font-size: 15pt;
+} /* 대상은 [i] 단 부모가 [p]일경우*/
+p i {
+	color: red;
+}
+
+span {
+	font-size: 20pt;
+}
+
+p+span {
+
+/*[p]와 형제관계인 [span]태그만 적용  */
+	color: orange;
+}
+/* 대상은 [i] 단 부모가 [p]일경우*/
+</style>
+</head>
+<body>
+
+	<div>
+		<h1>문장 구조 선택자 활용 및 관찰</h1>
+		<hr>
+
+	</div>
+
+	<p>
+		이문장을 통해 <i>이중태그</i>로 선택자를 사용하는 방법을 확인한다.
+	</p>
+	<p>
+		이 문장을 <span>통해 <i>이중태그</i>로 선택자를 사용
+		</span>하는 방법을 확인한다
+	</p>
+	<p>
+		이 문장을 <i>통해 <span>이중태그</span>로 선택자를 사용
+		</i>하는 방법을 확인한다
+	</p>
+	<span> 이 문장을 통해 이중태그로 선택자를 사용하는 방법을 확인한다</span>
+
+	<Br>
+	<Br>
+	<Br>
+	<Br>
+	<Br>
+	<Br>
+	<Br>
+	<Br>
+	<Br>
+
+</body>
+</html>

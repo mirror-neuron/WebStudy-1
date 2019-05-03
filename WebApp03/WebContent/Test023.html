@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function myMember()
+	{
+		var str = "";
+		var arr = new Array(new Array(), new Array(), new Array(), new Array(),
+				new Array(), new Array());
+		var n = 0;
+		var tot = 0;
+		var rank = 0;
+
+		do
+		{
+			//prompt() 대화창을 통해 입력된 값을 변수에 담아내기
+			str = prompt(" 이름 국어 영어 수학 (" + (n + 1) + ") : ");
+			//alert(str);
+			if (str == null || str == "." || str == " ")
+				break;
+
+			var member = str.split(" ");
+			arr[0][n] = member[0];
+			arr[1][n] = member[1];
+			arr[2][n] = member[2];
+			arr[3][n] = member[3];
+			arr[4][n] = (Number(member[1]) + Number(member[2]) + Number(member[3]))
+					.toString();
+			arr[5][n] = 1;
+
+			//alert(arr[4][n]);
+			//alert(arr[5][n]);
+			n++;
+		} while (true);
+
+		// 석차 계산
+		for (var i = 0; i < arr[0].length; i++)
+		{
+			for (var j = 0; j < arr[0].length; j++)
+			{
+				if (i == j)
+				{
+					continue;
+
+				}
+
+				if (Number(arr[4][i]) < Number(arr[4][j]))
+				{
+					//i번째 학생 등수 1증가
+					//i번째 학생의 arr[5][i]를 1만큼 증가
+					arr[5][i] = (Number(arr[5][i]) + 1).toString();
+
+				}
+			}
+
+		}
+
+		var result = "";
+
+		for (var j = 0; j < arr[0].length; j++)
+		{
+			for (var k = 0; k < arr.length; k++)
+			{
+				//alert(k + "," + j);
+				result +=arr[k][j] + "	";
+			}
+			result +="\n";
+		}
+		
+		document.getElementById("txtCount").value=arr[0].length;
+		document.getElementById("txtResult").value = "이름	국어	영어	수학	총점	등수	\n";
+		
+		
+			document.getElementById("txtResult").value += result;
+	
+
+		
+	}
+</script>
+</head>
+<body>
+	<!-- prompt()를 활용해 여러명의 성적을 입력받고, 등수를 부여하여 리스트를 출력하는 페이지를 구성한다.
+	html,css,javascript 활용
+	
+	페이지 레이아웃
+	
+	========================================================
+	
+	페이지 레이아웃
+	--------------------------------------------- prompt()
+	<성적정보입력>	→→→→→→→→→→→→→→→→→→→→→→ 이름 국어 영어 수학 (1) : 
+	--------------------------------------------- 
+	전체 인원 수 : [3]명
+	--------------------------------------------
+	이름 국어 영어 수학 총점 등수
+	--------------------------------------------
+	최보라	90	80	70	xx	1등
+	최파랑  80	70	60	xx	2등
+	최노랑	70	60	50	xx	3등
+	---------------------------------------------
+	-->
+
+
+	<div>
+		<div style="width: 240px; height: 50px;">
+			<input type="button" value="회원정보입력" class="btn" style="width: 350px;"
+				onclick="myMember()">
+		</div>
+		<div style="width: 240px; height: 50px;">
+			<div style="width: 100px; float: left;">전체 인원 수</div>
+			<div style="width: 100px; float: left;">
+				<input type="text" id="txtCount" class="txt" style="width: 20px;"
+					readonly="readonly">
+			</div>
+		</div>
+
+
+		<div style="width: 200x;">
+			=======================================================</div>
+		<div class="nametag">
+			<textarea rows="10" cols="30" id="txtResult" style="width: 500px;" readonly="readonly"></textarea>
+		</div>
+
+
+
+
+	</div>
+
+</body>
+</html>
