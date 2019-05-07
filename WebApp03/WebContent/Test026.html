@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function startGame()
+	{
+
+		var strArr = [ "가위", "바위", "보" ];
+		//※  Math.random();	-- 0.0 ~1.0사이의 실수형태의 난수 발생
+		var c = parseInt(Math.random() * 3) + 1;
+		//alert(c);	
+		var u = parseInt(document.getElementById("txtUser").value);
+
+		var msg = "";
+		msg += "사용자 :" + strArr[u - 1] + ", 컴퓨터 :" + strArr[c - 1];
+
+		if (u == c)
+		{
+			msg += " -> 비겼습니다";
+		} else if (u % 3 == (c + 2) % 3)
+		{
+			msg += " -> 컴터가 이겼습니다";
+
+		} else 
+		{
+			msg += " -> 유저가 이겼습니다";
+
+		}
+		
+		document.getElementById("txtResult").value = msg;
+	}
+</script>
+</head>
+<body>
+	<!-- 
+ 가위바위 보 게임을 구성한다
+ 자바스크립트 난수발생 함수를 찾아 활용한다.
+ 
+ 페이지 레이아웃 
+ ------------------------------------------
+ 입력 (1.가위 2.바위 3. 보) : [2]  <게임결과 확인>
+ [사용자: 바위 컴퓨터 :보 -> 컴퓨터가 이겼습니다.]
+ -->
+
+	<form>
+		<div style="width: 300px;">
+			입력(1.가위 2.바위 3.보 ) <input type="text" id="txtUser">
+			<button type="button" onclick="startGame()">게임결과 확인</button>
+			<br>
+			<Br> <input type="text" id="txtResult" readonly="readonly"
+				style="width: 390px;">
+
+		</div>
+
+	</form>
+</body>
+</html>
