@@ -1,6 +1,5 @@
 package com.text;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Solution
@@ -10,37 +9,27 @@ public class Solution
 	{
 		// TODO Auto-generated method stub
 
-		String participant[]= {"leo", "kiki", "eden"};
-		String completion[]= { "kiki","eden"};
-        ArrayList<String> list = new ArrayList<String>();
-        
-        
-        for (int i=0; i<participant.length;i++){
-            list.add(participant[i]);
-        }
-        
-       
-        
-        
-        for(int i=0;i<completion.length;i++){
-        	Iterator<String> iter = list.iterator();
-        	boolean check =true;
-            while(iter.hasNext()){
-             String s = iter.next();             
-                if(check){
-                    if(s.equals(completion[i])){
-                        iter.remove();
-                        check=false;
-                    }
-                }            
-            }         
-        }
-        for(String lists : list)
-        {
-        	System.out.println(lists);
-           
-        }   
+		String phone_book[] = { "113", "12340", "123440", "12345", "98346"};
+		boolean answer = false;
 
+		for (int i = 0; i < phone_book.length; i++)
+		{
+			int j = 0;
+			for (String s : phone_book)
+			{  
+				
+				if(j!=i) {
+				int num = Math.min(phone_book[i].length(), s.length());
+
+				if ((s.substring(0, num)).equals(phone_book[i].substring(0, num)))
+					System.out.println(answer);
+				}
+				j++;
+			}
+		}
+
+		answer = true;
+		System.out.println(answer);
 
 	}
 

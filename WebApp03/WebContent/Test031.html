@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test031</title>
+<style type="text/css">
+* {
+	font-family: 맑은고딕;
+	color: #223322;
+}
+
+.btn {
+	width: 240px;
+	font-size: 17px;
+}
+
+.btn:hover {
+	color: orange;
+	font-weight: bold;
+}
+</style>
+<script type="text/javascript">
+	function formClear(){
+		
+		document.getElementById("userName").value = "";
+		document.getElementById("userSsn").value="";
+		document.getElementById("userBasicPay").value="";
+		var cityObj = document.getElementById("userCity");
+		cityObj.options[1].selected=true;
+		var depObj = document.getElementById("userDepartment");
+		depObj.options[0].selected=true;
+		var posObj = document.getElementById("userPosition");
+		posObj.options[3].selected=true;
+	}
+
+	function isContain()
+	{
+		var name = document.getElementById("userName").value;
+		var ssn = document.getElementById("userSsn").value;
+		var pay = document.getElementById("userBasicPay").value;
+		if (selectCity() == "" || selectBuseo() == "" || selectTest() == ""
+				|| name == "" || ssn == "" || pay == "")
+		{
+			return true;
+		}
+	}
+
+	function selectCity()
+	{
+
+		var cityObj = document.getElementById("userCity");
+		var cityMsg = cityObj.options[(cityObj.selectedIndex)].value;
+		var msg = "";
+
+		switch (Number(cityMsg))
+		{
+		case 1:
+
+			msg = '서울';
+			break;
+
+		case 2:
+			msg = '대전';
+			break;
+		case 3:
+			msg = '광주';
+			break;
+		case 4:
+			msg = '대구';
+			break;
+		}
+
+		return msg;
+	}
+
+	function selectBuseo()
+	{
+
+		var BuseoObj = document.getElementById("userDepartment");
+		var BuseoMsg = BuseoObj.options[(BuseoObj.selectedIndex)].value;
+		var msg = "";
+
+		switch (Number(BuseoMsg))
+		{
+		case 1:
+
+			msg = '개발부';
+			break;
+
+		case 2:
+			msg = '인사부';
+			break;
+		case 3:
+			msg = '자재부';
+			break;
+		case 4:
+			msg = '영업부';
+			break;
+		case 5:
+			msg = '총무부';
+			break;
+		}
+
+		return msg;
+	}
+
+	function selectTest()
+	{
+		//alert("dfdf");
+
+		// 첫 번째 방법
+		/* var position = document.getElementById("userPosition").value;
+		
+		alert(position); */
+
+		// 두 번째 방법
+		/* var positionObj = document.getElementById("userPosition");
+		var positionOptions = positionObj.options;
+		var positionMsg="";
+		
+		for (var i = 0; i < positionOptions.length; i++)
+		{
+			if (positionOptions[i].selected)
+			{
+				// 단일선택
+				positionMsg = positionOptions[i].value;
+				
+				
+				break;	// 다중선택일 경우 사용 안함
+				
+				//다중 선택
+				//positionMsg += positionOptions[i].value+" ";
+			}
+			
+			
+			
+		}
+		alert(positionMsg);
+		 */
+
+		// 세 번째 방법
+		var positionObj = document.getElementById("userPosition");
+		//alert(positionObj.selectedIndex);
+		//--=> 부장 : 0 ,과장 : 1, 대리 : 2 ,사원 : 3
+		var positionMsg = positionObj.options[(positionObj.selectedIndex)].value;
+		var msg = "";
+
+		switch (Number(positionMsg))
+		{
+		case 1:
+
+			msg = '부장';
+			break;
+
+		case 2:
+			msg = '과장';
+			break;
+		case 3:
+			msg = '대리';
+			break;
+		case 4:
+			msg = '사원';
+			break;
+		}
+
+		return msg;
+
+	}
+
+	function addMember()
+	{
+		/* if (isContain())
+		{
+			alert("값을 미입력했습니다. 확인세요");
+			return;
+		} */
+
+		var tableNode = document.getElementById("memberList");
+
+		var trNode = document.createElement("tr");
+		trNode
+				.appendChild(createTdNode(document.getElementById("userName").value));
+		trNode
+				.appendChild(createTdNode(document.getElementById("userSsn").value));
+		trNode.appendChild(createTdNode(selectCity()));
+		trNode.appendChild(createTdNode(selectBuseo()));
+		trNode.appendChild(createTdNode(selectTest()));
+		trNode
+				.appendChild(createTdNode(document
+						.getElementById("userBasicPay").value));
+		tableNode.appendChild(trNode);
+		
+		//formClear();
+		document.forms[0].reset();
+		document.getElementById("userName").focus();
+		
+	}
+
+	function createTdNode(val)
+	{
+
+		var textNode = document.createTextNode(val);
+		var tdNode = document.createElement("td");
+		tdNode.appendChild(textNode);
+		return tdNode;
+
+	}
+</script>
+</head>
+<body>
+	<div>
+		<h1>자바스크립트 활용</h1>
+		<hr>
+	</div>
+	<div>
+		<h2>선택목록(select)다루기</h2>
+		<form>
+			<table>
+				<tr>
+					<td>이름</td>
+					<td><!-- <input type="text" id="userName" placeholder="ex)홍길동"> -->
+					<input type="text" id="userName" ></td>
+				</tr>
+				<tr>
+					<td>주민등록번호</td>
+					<td><input type="password" id="userSsn"
+						placeholder="ex)950213-*******"></td>
+				</tr>
+				<tr>
+					<td>지역</td>
+					<td>
+						<!-- <input type="text" id="userCity" placeholder="ex)서울"> --> <select
+						id="userCity">
+							<option value="1">서울</option>
+							<option value="2" selected="selected">대전</option>
+							<option value="3">광주</option>
+							<option value="4">대구</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>부서</td>
+					<td>
+						<!-- <input type="text" id="userDepartment"
+						placeholder="ex)개발부"> --> <select id="userDepartment">
+							<option value="1">개발부</option>
+							<option value="2" selected="selected">인사부</option>
+							<option value="3">자재부</option>
+							<option value="4">영업부</option>
+							<option value="5">총무부</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>직위</td>
+					<!-- 
+					<input type="text" id="userPosition" placeholder="ex)부장"> -->
+					<td><select id="userPosition">
+							<option value="1">부장</option>
+							<option value="2">과장</option>
+							<option value="3">대리</option>
+							<option value="4" selected="selected">사원</option>
+					</select>
+				</tr>
+				<tr>
+					<td>기본급</td>
+					<td><input type="text" id="userBasicPay"
+						placeholder="ex)3000000"></td>
+				</tr>
+			</table>
+			<!-- 	<input type="button" value="직원추가" class="btn" onclick="selectTest()"> -->
+			<input type="button" value="직원추가" class="btn" onclick="addMember()">
+			<!-- <input type="reset" value="깨끗"> -->
+			<br> <br>
+			<table id="memberList">
+				<tr>
+					<td>이름</td>
+					<td>주민번호</td>
+					<td>지역</td>
+					<td>부서</td>
+					<td>직위</td>
+					<td>기본급</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+</html>

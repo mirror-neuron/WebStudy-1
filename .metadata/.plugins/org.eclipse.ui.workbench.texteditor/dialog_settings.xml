@@ -15,6 +15,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="add"/>
 			<item value="d+"/>
 			<item value="d+days"/>
 			<item value="val"/>

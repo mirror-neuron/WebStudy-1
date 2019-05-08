@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#menuTable {
+	display: none;
+}
+</style>
+<script type="text/javascript" src="js/myMenu.js"></script>
+</head>
+<body>
+	<div>
+		<h1>자바스크립트 활용</h1>
+		<hr>
+	</div>
+	<div>
+		<h2>메뉴보이기/감추기</h2>
+		<div>
+			<form>
+				<!-- 클릭시 메뉴 테이블 보이기-->
+				<input type="button" value="메뉴 보이기" onclick="myMenu(1)">
+				<!-- 클릭시 메뉴 테이블 감추기 -->
+				<input type="button" value="메뉴 감추기"  onclick="myMenu(2)">
+				<!-- 버튼위에 마우스 커서를 올려놓으면 메뉴 테이블이 보이고 다시 버튼위에 머물던 마우스 커서가 
+					버튼의 영역을 빠져나간다면 메뉴테이블 감추기 -->
+				<input type="button" value="메뉴 보이기/메뉴 감추기" onmouseover="myMenu(1)" onmouseout="myMenu(2)">
+
+			</form>
+
+		</div>
+		<br> <Br>
+		<div id="menuTable">
+			<table>
+				<tr>
+					<td>java기초</td>
+				</tr>
+
+				<tr>
+					<td>오라클 중급</td>
+				</tr>
+
+				<tr>
+					<td>jsp고급</td>
+				</tr>
+
+				<tr>
+					<td>Servlet 응용</td>
+				</tr>
+
+
+			</table>
+
+		</div>
+	</div>
+</body>
+</html>
