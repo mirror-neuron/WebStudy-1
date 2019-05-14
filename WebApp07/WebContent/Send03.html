@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<!--
+        ○ 데이터 송수신 실습 03
+          - 두 개의 정수와 연산자를 입력받은 html 페이지를 구성
+
+            정수 1 [textbox] [select]  정수2[textbox]
+
+            <결과확인><취소> ->button
+
+          - 결과 확인 버튼 클릭 시
+            [입력 하신 48과 32의 연산결과는 77입니다. 라는 내용을 출력하는 jsp 페이지 구성]
+
+          - 사용자 최초 요청 주소는 localhost:8090/WebApp07/Send03.html
+   -->
+	<form action="Receive03.jsp">
+
+		<div>
+			정수1 <input type="text" name="num1" value="" placeholder="ex)30">
+			<select class="syntext" name="syntext" style="width:300px;text-align:center;">
+				<option value="plus">+</option>
+				<option value="minus">-</option>
+				<option value="times">*</option>
+				<option value="dev">/</option>
+
+			</select> 
+			
+			정수2 <input type="text" name="num2" value="" placeholder="ex)30">
+		</div>
+		<div>
+			<button type="submit" name="btn">전송</button>
+			<button type="reset" name="btn">리셋</button>
+		</div>
+	</form>
+</body>
+</html>

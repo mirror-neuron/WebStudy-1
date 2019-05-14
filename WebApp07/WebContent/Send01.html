@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Insert title here</title>
+</head>
+
+<body>
+  <!--○ 데이터 송 수신 실습 01
+        - 이름과 전화번호를 입력받은 html페이지를 작성한다.
+          이름   [textbox] <- 최보라
+          전화번호 [textbox] <- 0010816248
+          <회원가입> -> button
+
+        회원가입 버튼 클릭 시
+        [최보라님 회원가입이 완료되었습니다. 회원님께서 등록하신 전화번호는 0010816248입니다]
+        라는 내용을 출력하는 jsp 페이지를 구성하여 데이터를 전달할 수 있도록 한다.
+
+        사용자의 최초 요청 주소는
+        [http://localhost:8090/WebApp07/Send01.html로 한다.]
+
+        - 1. 클라이언트측에서 서버측에 데이터 전송 및 페이지 요청을 위해 form태그 필요
+        - 2. form태그영역 안에 들어가야 하는 대상은... 이름과 전화번호 submit
+        - 3. form 태그의 action 속성은 데이터를 전송하며 요청하는 jsp 페이지 주소 지정
+            이 때, 지정하는 페이지의 주소를 절대 경로 형태로 작성하는 것은 바람직하지 않다.
+        - 4. form 태그의 method 속성은 데이터 전송 및 페이지 요청방식 (get 또는 post)
+
+
+      -->
+
+  <div>
+    <form  action="Receive01.jsp" method="post">
+
+
+      <div>
+        이름 <input type="text" name="name" placeholder="ex)보라보라">
+        전화번호 <input type="text" name="tel" value="" placeholder="ex)010-9900-9876">
+      </div>
+      <button type="submit" class="btn">회원가입</button>
+      <button type="reset" class="btn">취소</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

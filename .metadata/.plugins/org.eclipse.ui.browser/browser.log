@@ -41,3 +41,26 @@
 5월 07, 2019 16:14:49.53 [5700:11320:0507/161449.533:ERROR:browser_process_sub_thread.cc(217)] Waited 123 ms for network service
 5월 07, 2019 16:29:02.28 [15872:6952:0507/162902.285:ERROR:browser_process_sub_thread.cc(217)] Waited 58 ms for network service
 5월 07, 2019 16:33:36.91 [7768:18232:0507/163336.910:ERROR:browser_process_sub_thread.cc(217)] Waited 148 ms for network service
+
+5월 10, 2019 15:52:04.38 NEW SESSION
+5월 10, 2019 15:52:04.38 [2088:6936:0510/155204.252:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 10, 2019 16:54:58.92 [2088:6936:0510/165458.924:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 10, 2019 16:59:43.59 [2088:6936:0510/165943.591:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 10, 2019 17:56:59.06 [2088:16348:0510/175659.059:ERROR:CONSOLE(0)] "Access to XMLHttpRequest at 'https://play.google.com/log?format=json&hasfast=true' from origin 'chrome-search://local-ntp' has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'http://play.google.com' that is not equal to the supplied origin.", source: chrome-search://local-ntp/local-ntp.html (0)
+5월 10, 2019 17:57:01.03 [2088:16348:0510/175701.036:ERROR:CONSOLE(0)] "Access to XMLHttpRequest at 'https://play.google.com/log?format=json&hasfast=true' from origin 'chrome-search://local-ntp' has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'http://play.google.com' that is not equal to the supplied origin.", source: chrome-search://local-ntp/local-ntp.html (0)
+5월 10, 2019 17:57:05.14 [2088:16348:0510/175705.141:ERROR:CONSOLE(0)] "Access to XMLHttpRequest at 'https://play.google.com/log?format=json&hasfast=true' from origin 'chrome-search://local-ntp' has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'http://play.google.com' that is not equal to the supplied origin.", source: chrome-search://local-ntp/local-ntp.html (0)
+5월 10, 2019 17:57:12.58 [2088:16348:0510/175712.580:ERROR:CONSOLE(0)] "Access to XMLHttpRequest at 'https://play.google.com/log?format=json&hasfast=true' from origin 'chrome-search://local-ntp' has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'http://play.google.com' that is not equal to the supplied origin.", source: chrome-search://local-ntp/local-ntp.html (0)
+5월 10, 2019 17:57:28.99 [2088:16348:0510/175728.995:ERROR:CONSOLE(0)] "Access to XMLHttpRequest at 'https://play.google.com/log?format=json&hasfast=true' from origin 'chrome-search://local-ntp' has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'http://play.google.com' that is not equal to the supplied origin.", source: chrome-search://local-ntp/local-ntp.html (0)
+5월 10, 2019 19:00:39.44 [2088:16348:0510/190039.446:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+5월 10, 2019 19:46:40.99 [2088:7784:0510/194640.995:ERROR:browser_process_sub_thread.cc(217)] Waited 162 ms for network service
+
+5월 13, 2019 12:09:12.39 NEW SESSION
+5월 13, 2019 12:09:12.39 [18704:21380:0513/120912.390:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 13, 2019 12:09:23.90 [18704:21380:0513/120923.907:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 13, 2019 12:16:01.90 [18704:10408:0513/121601.902:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+5월 13, 2019 15:39:59.16 [18704:20432:0513/153959.159:ERROR:platform_sensor_reader_win.cc(244)] NOT IMPLEMENTED
+5월 13, 2019 15:52:31.50 [18704:20432:0513/155231.501:ERROR:platform_sensor_reader_win.cc(244)] NOT IMPLEMENTED
+5월 13, 2019 15:56:10.42 [18704:21380:0513/155610.424:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 13, 2019 16:50:55.78 [18704:21380:0513/165055.786:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 13, 2019 16:53:19.70 [18704:21380:0513/165319.701:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 13, 2019 17:00:53.23 [18704:21380:0513/170053.234:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 

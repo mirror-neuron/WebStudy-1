@@ -21,4 +21,37 @@ jsp 페이지에서는 request 객체의 getParameter() 메소드 필요
 
 4.  void setCharacterEncoding(encode)
     전송된 데이터의 문자 인코딩 방식을 지정한다.
+
+
+
+    String id = request.getParameter("id");
+String pwd = request.getParameter("pwd");
+String name = request.getParameter("name");
+String tel = request.getParameter("tel");
+String gender = request.getParameter("gender");
+String city = request.getParameter("city");
+String subject[] = request.getParameterValues("subject");
+
+String subjectlist = "";
+
+	if (subject != null)
+	{
+		for (String s : subject)
+		{
+
+			subjectlist += s + "&nbsp;";
+
+		}
+
+	} else
+	{
+		subjectlist = "없";
+	}
  
+ 아이디 :
+	<%=id%><Br>비밀번호 :
+	<%=pwd%><Br>이름 :
+	<%=name%><Br>전화번호 :
+	<%=tel%><Br>성별 :
+	<%=gender%><Br>지역 :
+	<%=city%><Br> 수강과목 :<%=subjectlist%><Br>

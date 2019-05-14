@@ -17,9 +17,9 @@
 		<form action="RadioSelect_ok.jsp" method="post">
 
 			이름 <input type="text" name="name"> <br> 성별 <label><input
-				type="radio" value="m" name="sexual">남자</label> <label><input type="radio"
-				value="f" name="sexual">여자</label> <br>
-			<br> 전공 <select name ="jun">
+				type="radio" value="m" name="sexual">남자</label> <label><input
+				type="radio" value="f" name="sexual">여자</label> <br>
+			<br> 전공 <select name="jun">
 				<option value="국문학">국문</option>
 				<option value="영문학">영문</option>
 				<option value="컴공학">컴퓨터</option>
@@ -27,8 +27,8 @@
 				<option value="신문방송학">신문방송</option>
 				<option value="경영학">경영</option>
 
-			</select> <br>
-			<Br> 취미 <select size="6" multiple="multiple" name ="hobby">
+			</select> <br> <Br> 취미 <select size="6" multiple="multiple"
+				name="hobby">
 				<option value="영화감상">영화감상</option>
 				<option value="음악감상">음악감상</option>
 				<option value="배드민턴">배드민턴</option>
@@ -36,11 +36,10 @@
 				<option value="취침소등">취침소등</option>
 				<option value="암벽등반">암벽등반</option>
 
-			</select> <br>
-			<Br> <input type="submit" value="내용전송 " class="btn"
+			</select> <br> <Br> <input type="submit" value="내용전송 " class="btn"
 				style="width: 100px;">
 
-		
+
 		</form>
 	</div>
 

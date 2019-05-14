@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript">
+function check(obj){
+	obj.submit();
+	/* obj변수에는 form객체가 저장되어 있다. 필요에 따라 전송하기 전에 검증절차를 추가하는 것이 가능하다. */
+	
+	/* form.submit() 
+	함수의 호출을 통해 form 객체의 데이터를 서버로 전송하는 것이 가능하다.
+	*/
+}
+
+</script>
+</head>
+<body>
+
+	<!-- 데이터 송수신 실습 05
+			- 구구단 결과를 출력하는 jsp페이지를 구성한다
+			- 원하는 단수를 입력받아 화면에 출력해주는 형태의 페이지로 구현한다
+			- 단, submit버튼없이 이벤트를 처리할 수 있도록 한다. -->
+	<div>
+		<h1>데이터 송수신 실습 05</h1>
+		<hr>
+	</div>
+	<div>
+		<form action ="Receive05.jsp" name="frm" method="post">
+		단수선택 <select class="dan" name ="dan" id="dan" style="width: 300px;" onchange="check(this.form)">
+			<option value="1" selected="selected">1단</option>
+			<option value="2">2단</option>
+			<option value="3">3단</option>
+			<option value="4">4단</option>
+			<option value="5">5단</option>
+			<option value="6">6단</option>
+			<option value="7">7단</option>
+			<option value="8">8단</option>
+			<option value="9">9단</option>
+		</select>
+		</form>
+	</div>
+
+</body>
+</html>

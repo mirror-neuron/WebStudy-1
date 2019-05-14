@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<!-- 데이터 송수신 실습 02
+
+        - 이름과 성적 정보를 입력받은 html 페이지를 작성한다.
+            이름 []   <- 최보라
+            국어점수 [] <- 90
+            영어점수  [] <- 80
+            수학점수 [] <-70
+          <전송><취소>
+        - 전송 버튼 클릭시
+        [최보라님 성적처리가 완료되었습니다.]
+        회원님의 점수는 국어 :90점 영어 :80점...입니다.
+        총점은 240점 평균은 80.0입니다.
+        라는 내용을 출력하는 jsp페이지를 구성
+        -->
+	<form action="Receive02.jsp">
+		<div>
+			이름 <input type="text" name="name" value="" placeholder="이름">
+			국어점수 <input type="text" name="kor" value="" placeholder="국어점수">
+			 영어점수 <input type="text" name="eng" value="" placeholder="영어점수">
+			 수학점수 <input type="text" name="math" value=""	placeholder="수학점수">
+		</div>
+
+
+		<button type="submit" class="btn">"전송"</button>
+		<button type="reset" class="btn">"리셋"</button>
+
+	</form>
+
+</body>
+
+</html>
